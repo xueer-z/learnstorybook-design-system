@@ -18,18 +18,22 @@ function ButtonWrapper(props) {
 }
 
 export default {
-  title: 'Design System/Button',
+  title: 'Rabble Design System/Button',
   component: Button,
+  parameters: {
+    docs: {
+      description: {
+        component: 'Some description about Rabble buttons',
+      },
+    },
+  },
 };
 
 export const AllButtons = (args) => (
   <div>
     <Button appearance="primary">Primary</Button>
     <Button appearance="secondary">Secondary</Button>
-    <Button appearance="tertiary">Tertiary</Button>
-    <Button appearance="outline">Outline</Button>
-    <Button appearance="primaryOutline">Outline primary</Button>
-    <Button appearance="secondaryOutline">Outline secondary</Button>
+    <Button appearance="destructive">Destructive</Button>
     <Button appearance="primary" isDisabled>
       Disabled
     </Button>
@@ -40,14 +44,8 @@ export const AllButtons = (args) => (
     <Button appearance="secondary" isLoading>
       Secondary
     </Button>
-    <Button appearance="tertiary" isLoading>
+    <Button appearance="destructive" isLoading>
       Tertiary
-    </Button>
-    <Button appearance="outline" isLoading>
-      Outline
-    </Button>
-    <Button appearance="outline" isLoading loadingText="Custom...">
-      Outline
     </Button>
     <br />
     <Button appearance="primary" size="small">
@@ -56,11 +54,8 @@ export const AllButtons = (args) => (
     <Button appearance="secondary" size="small">
       Secondary
     </Button>
-    <Button appearance="tertiary" size="small">
+    <Button appearance="destructive" size="small">
       Tertiary
-    </Button>
-    <Button appearance="outline" size="small">
-      Outline
     </Button>
     <Button appearance="primary" isDisabled size="small">
       Disabled
