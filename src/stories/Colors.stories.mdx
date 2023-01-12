@@ -1,0 +1,33 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+
+<Meta title="Rabble Colors" />
+
+# Rabble Colors
+
+<ColorPalette>
+  <ColorItem
+    title="theme.color.layers"
+    subtitle="Some of the layers"
+    colors={{ layer_01: 'rgba(0,0,0, 0.04)', layer_02: 'rgba(0,0,0, 0.08)', layer_03: 'rgba(0,0,0, 0.12)', layer_04: 'rgba(0,0,0, 0.16)' }}
+  />
+  <ColorItem 
+    title="theme.color.text" 
+    subtitle="text colors" 
+    colors={{
+      text_primary: 'rgba(0, 0, 0, 0.86)',
+      text_secondary: 'rgba(0, 0, 0, 0.6)',
+      text_tertiary: 'rgba(0, 0, 0, 0.38)',
+      text_quaternary: 'rgba(0, 0, 0,0)',
+      text_sub: 'rgb(124, 124, 124)'
+    }}
+  />
+  <ColorItem
+    title="theme.color.accent"
+    subtitle="accent and its variants"
+    colors={{
+      accent_primary_brighter: 'rgba(176, 97, 255, 1)',
+      accent_primary_faded: 'rgba(133, 76, 254, 0.2)',
+      accent_secondary: 'rgba(87, 48, 171, 0.77)'
+    }}
+  />
+</ColorPalette>
